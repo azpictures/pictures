@@ -6,19 +6,23 @@
     <title>Model Gallery</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="loadModelGallery()">
 
     <div class="model-gallery">
         <h1 id="model-name">Model Gallery</h1>
+
+        <!-- Toggle buttons for switching between images and videos -->
+        <div class="toggle-buttons">
+            <button id="images-btn" class="active" onclick="toggleGallery('images')">Images</button>
+            <button id="videos-btn" onclick="toggleGallery('videos')">Videos</button>
+        </div>
+
+        <!-- Model's image or video gallery -->
         <div id="gallery" class="gallery">
-            <!-- Images will be inserted here dynamically -->
+            <!-- Images or videos will be inserted here dynamically -->
         </div>
     </div>
 
     <script src="js/script.js"></script>
-    <script>
-        // Call the function to load the gallery for the selected model
-        loadModelGallery();
-    </script>
 </body>
 </html>
