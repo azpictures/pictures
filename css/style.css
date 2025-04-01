@@ -1,0 +1,304 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Dark background for the overall site */
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Hero section (fullscreen background image) */
+.hero {
+    height: 100vh;
+    background: url('https://akns-images.eonline.com/eol_images/Entire_Site/2023213/rs_1024x759-230313181229-kendall-3.jpg?fit=around%7C1024:760&output-quality=90&crop=1024') 
+                no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Navigation bar */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Dark background for better visibility */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: black;
+}
+
+/* Hero text (Welcome message) */
+.hero-text {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+}
+
+/* Models Page Styling */
+.models-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.models-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.model-box {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.model-box:hover {
+    background: white;
+    color: black;
+}
+
+/* Model Gallery Page Styling */
+.model-gallery {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.model-gallery h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Gallery Grid - Increase image size */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Allow larger image sizes */
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Set to 100% to use full container width */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    object-fit: cover; /* Ensure images fit and fill container properly */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Add slight zoom effect */
+}
+
+/* Lightbox Styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dim background */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-image {
+    max-width: 100%;    /* Allow image to take up maximum width */
+    max-height: 100%;   /* Allow image to take up maximum height */
+    width: auto;        /* Ensure width stays responsive */
+    height: auto;       /* Ensure height stays responsive */
+    border-radius: 10px;
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+}
+
+/* Navigation buttons for lightbox */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Close button for lightbox */
+#close-lightbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Lightbox container */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Lightbox image */
+.lightbox-img {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin: auto;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Previous and Next buttons */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+}
+
+button.prev {
+    left: 20px;
+}
+
+button.next {
+    right: 20px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    /* Adjust hero section text */
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    /* Models grid for smaller screens */
+    .models-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 1-2 columns on small screens */
+    }
+
+    /* Gallery grid layout for smaller screens */
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Single column or two columns */
+    }
+
+    /* Ensure images are responsive on mobile */
+    .gallery img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust the lightbox for mobile */
+    .lightbox-img {
+        max-width: 90%; /* Make the lightbox image slightly smaller on mobile */
+        max-height: 80%;
+    }
+
+    /* Lightbox close and navigation buttons */
+    .nav-btn, #close-lightbox {
+        font-size: 30px; /* Smaller buttons on mobile */
+    }
+}
+
+/* For very small screens (like portrait phones) */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .model-box h2 {
+        font-size: 16px; /* Smaller font for model names */
+    }
+}
