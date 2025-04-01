@@ -21,11 +21,31 @@
                 "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743497317/k9_rh4ve1.webp",
                 "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743497317/k8_wc7zh7.jpg",
                 "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743497034/k4_u9iwe3.jpg"
-            ]
+            ],
+            "videos": []
         },
         {
             "name": "Yesha Sagar",
             "images": [
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528262/image_-_1417957_yezoao.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528262/image_-_6131197_xsxtej.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528262/image_-_7960713_xpurxx.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528262/image_-_7663309_hfdfy3.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528261/image_-_9587746_jfzdgi.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528261/image_-_3251743_c6zrxe.webp",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528260/image_-_1856202_t13ezk.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528261/image_-_7390692_og4nce.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528261/image_-_2162954_duc8kd.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528261/image_-_27697_sqfzrs.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528260/image_-_4506666_cujlrw.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528261/image_-_6221814_wtilf9.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528259/image_-_8772360_wrjpmp.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528259/image_-_2541516_rtnwjr.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528260/image_-_2856446_waekkc.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528260/image_-_6820589_bax1zt.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528259/image_-_4938003_vo3mkr.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528259/image_-_5429242_sge9k1.jpg",
+                "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743528259/image_-_2530117_y7554z.jpg",
                 "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743505083/image_-_7976748_acso2m.jpg",
                 "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743505081/image_-_86425_g5ayan.jpg",
                 "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743505080/image_-_7906824_rxohmw.webp",
@@ -68,6 +88,12 @@
                 "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743505043/image_-_3223956_e7dyll.webp",
                 "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743505043/image_-_4493925_tmnalk.jpg",
                 "https://res.cloudinary.com/dij5cqzrr/image/upload/v1743505043/image_-_5968325_gvkwcw.webp"
+            ],
+            "videos": [
+                "https://res.cloudinary.com/dij5cqzrr/video/upload/v1743528952/Snapins.ai_video_AQMrY7Vxowa2a8AK5QxsEUICKOp5EnI0oE6yaVJPOkvur_4vRaH7INQZsRCEoy1pwp53ABZtwoosRmqZ_bTocHXHTFHX36HXwfdzLko_eiacjz.mp4",
+                "https://res.cloudinary.com/dij5cqzrr/video/upload/v1743532159/Snapins.ai_video_AQOvzeR9MWilfWuAcYddgO_j-1CkkQsRXY_MmWOzouNB8dcVei0TkPWvIX2xYNerrJBor8CNmOA_Bb4oFyeGkcorU_eKBpXh76Z3eCM_u1inqm.mp4",
+                "https://res.cloudinary.com/dij5cqzrr/video/upload/v1743532158/Snapins.ai_video_AQMrY7Vxowa2a8AK5QxsEUICKOp5EnI0oE6yaVJPOkvur_4vRaH7INQZsRCEoy1pwp53ABZtwoosRmqZ_bTocHXHTFHX36HXwfdzLko_xgqvem.mp4",
+                "https://res.cloudinary.com/dij5cqzrr/video/upload/v1743532156/Snapins.ai_video_AQM0C2dtn2pm9nRrNdS4pFx8KSSkKl9hRICto6cMtwPf_pwcJWWvH0pQ9VLnAUJDAFjv6AWINe01Begu_Bw21b4BBYHAnmpGPst2P5U_riaey2.mp4"
             ]
         }
     ]
