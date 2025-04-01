@@ -14,7 +14,7 @@ body {
 
 /* Hero section (fullscreen background image) */
 .hero {
-    min-height: 100vh; /* Use min-height to ensure it takes at least full screen height */
+    min-height: 100vh;
     background: url('https://akns-images.eonline.com/eol_images/Entire_Site/2023213/rs_1024x759-230313181229-kendall-3.jpg?fit=around%7C1024:760&output-quality=90&crop=1024') 
                 no-repeat center center/cover;
     display: flex;
@@ -23,7 +23,7 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
-    overflow: hidden; /* Prevents unnecessary overflow */
+    overflow: hidden;
 }
 
 /* Navigation bar */
@@ -31,7 +31,7 @@ nav {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: rgba(0, 0, 0, 0.7); /* Dark background for better visibility */
+    background: rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
     border-radius: 10px;
 }
@@ -63,7 +63,7 @@ nav ul li a:hover {
 
 /* Hero text (Welcome message) */
 .hero-text {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
@@ -118,10 +118,32 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
+/* Toggle Buttons */
+.toggle-buttons {
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.toggle-buttons button.active {
+    background-color: white;
+    color: black;
+}
+
 /* Gallery Grid - Increase image size */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Allow larger image sizes */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     max-width: 1000px;
     margin: auto;
@@ -130,15 +152,29 @@ nav ul li a:hover {
 .gallery img {
     width: 100%;
     height: auto;
-    max-width: 100%; /* Set to 100% to use full container width */
+    max-width: 100%;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
-    object-fit: cover; /* Ensure images fit and fill container properly */
+    object-fit: cover;
 }
 
 .gallery img:hover {
-    transform: scale(1.05); /* Add slight zoom effect */
+    transform: scale(1.05);
+}
+
+/* 🛠️ FIX: Small Video Thumbnails */
+.video-thumbnail {
+    width: 100%; 
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.video-thumbnail:hover {
+    transform: scale(1.05);
 }
 
 /* Lightbox Styles */
@@ -148,137 +184,58 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dim background */
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.lightbox-image {
-    max-width: 100%;    /* Allow image to take up maximum width */
-    max-height: 100%;   /* Allow image to take up maximum height */
-    width: auto;        /* Ensure width stays responsive */
-    height: auto;       /* Ensure height stays responsive */
-    border-radius: 10px;
-    object-fit: contain; /* Maintain aspect ratio without cropping */
-}
-
-/* Navigation buttons for lightbox */
-.nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.1); 
-    color: white;
-    font-size: 40px;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.nav-btn:hover {
-    background: rgba(0, 0, 0, 0.6); /* Slightly more visible on hover */
-}
-
-#prev-btn {
-    left: 10px;
-}
-
-#next-btn {
-    right: 10px;
-}
-
-/* Close button for lightbox */
-#close-lightbox {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-}
-
-/* Lightbox container */
-.lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    cursor: pointer; /* Make the lightbox area swipeable */
 }
 
-/* Lightbox image */
-.lightbox-img {
-    max-width: 100vw;   /* Make image larger on larger screens */
-    max-height: 98vh;
+/* Lightbox image and video */
+.lightbox-media {
+    max-width: 100%;
+    max-height: 100%;
     display: block;
     margin: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* 🛠️ FIX: Make video slightly larger in the lightbox */
+.lightbox video {
+    max-width: 100%; /* Make the video bigger */
+    max-height: 100%;
 }
 
 /* Close button */
 .close {
     position: absolute;
     top: 10px;
-    right: 20px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* Previous and Next buttons */
-button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.1);
-    color: white;
-    border: none;
+    right: 10px;
     font-size: 40px;
+    color: white;
     cursor: pointer;
-    padding: 10px;
-    z-index: 2;
-}
-
-button.prev {
-    left: 20px;
-}
-
-button.next {
-    right: 20px;
-}
-
-button.prev:hover, button.next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Responsive styles for mobile */
 @media (max-width: 768px) {
-    /* Adjust hero section */
     .hero {
-        min-height: 100vh; /* Ensure full screen height */
+        min-height: 100vh;
         background-size: cover;
         padding: 20px;
     }
 
-    /* Adjust text inside hero */
     .hero-text {
-        width: 90%; /* Ensure text block doesn't stretch too much */
+        width: 90%;
         padding: 15px;
     }
 
     .hero-text h1 {
-        font-size: 24px; /* Adjust font size */
-        line-height: 1.3; /* Better spacing */
+        font-size: 24px;
+        line-height: 1.3;
     }
 
-    /* Adjust navigation bar */
     nav {
         top: 10px;
         right: 10px;
@@ -298,16 +255,15 @@ button.prev:hover, button.next:hover {
 /* For very small screens (phones under 480px) */
 @media (max-width: 480px) {
     .hero {
-        min-height: 100vh; /* Ensure it fills the screen */
+        min-height: 100vh;
         background-position: center;
         background-size: cover;
     }
 
     .hero-text h1 {
-        font-size: 20px; /* Smaller text */
+        font-size: 20px;
     }
 
-    /* Navigation bar */
     nav {
         padding: 5px 10px;
     }
